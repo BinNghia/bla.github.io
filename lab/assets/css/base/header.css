@@ -1,0 +1,125 @@
+.header {
+  position: relative;
+}
+.header-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header-top-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 85px;
+}
+.header-top-inner .header-top-right {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.header-top-inner .header-top-right .cart {
+  padding: 0 37px;
+}
+.header-top-inner .header-top-right .cart .cart-wrap {
+  position: relative;
+  margin: 0 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+.header-top-inner .header-top-right .cart .cart-wrap .cart-notice {
+  position: absolute;
+  top: -2px;
+  right: -7px;
+  padding: 0px 4px;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #333;
+  background: #fff;
+}
+.header-top-inner .header-top-right .cart .cart-wrap ion-icon {
+  width: 33px;
+  height: 28px;
+  color: #fff;
+  --ionicon-stroke-width: 28px;
+}
+.header-top-inner .header-top-right .cart .cart-wrap:hover {
+  display: block;
+}
+.header-top-inner .header-top-right .search i {
+  color: #fff;
+}
+.header-down {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 76%;
+  top: 34%;
+  left: 18.75%;
+  padding-left: 15px;
+}
+.header-down .header-down-left .text1 {
+  padding-top: 7px;
+  padding-left: 3px;
+}
+.header-down .header-down-left .text1 p {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #696969;
+  letter-spacing: 12.5px;
+}
+.header-down .header-down-left .text2 {
+  padding: 37px 0 71px 0;
+}
+.header-down .header-down-left .text2 p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 100px;
+  color: #333;
+  letter-spacing: 30px;
+  line-height: 102px;
+}
+.header-down .header-down-left a {
+  padding: 13px 28px;
+  background-color: #333;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 16px;
+  letter-spacing: 2.5px;
+}
+.header-down .header-down-right {
+  float: right;
+  text-align: right;
+  padding: 91px 0;
+}
+.header-down .header-down-right ul li {
+  padding-bottom: 20px;
+}
+.header-down .header-down-right ul li a {
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #d1c6b0;
+  letter-spacing: 2.5px;
+  overflow: hidden;
+}
+.header-down .header-down-right ul li a:hover {
+  color: #fff;
+}
+.header-down .header-down-right ul li a:hover::before {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  top: 17px;
+  height: 1px;
+  background-color: #333;
+  transform: translateX(130px);
+}
